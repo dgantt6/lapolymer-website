@@ -53,16 +53,15 @@
   <div id="content">
     <!-- Begin column left -->
     <div id="form">
-      <form action="gdform.php" method="post">
-	  <input type="hidden" name="subject" value="Website Contact Form">
-	  <input type="hidden" name="redirect" value="thank-you.html">
-
+      <form action="https://formspree.io/f/mreojgok" method="POST">
+        <input type="hidden" name="_subject" value="Website Contact Form">
+        <input type="hidden" name="_next" value="https://lapolymer.com/thank-you.html">
 
         <label for="name">Name:</label>
         <br />
-        <input type="text" id="name" name="name" class="textinput" maxlength="75" />
+        <input type="text" id="name" name="name" class="textinput" maxlength="75" required/>
         <br />
-        <label for="phone">Company:</label>
+        <label for="company">Company:</label>
         <br />
         <input type="text" id="company" name="company" class="textinput" maxlength="75" />
         <br />
@@ -70,9 +69,9 @@
         <br />
         <input type="text" id="phone" name="phone" class="textinput" maxlength="25" />
         <br />
-        <label for="website_address">E-mail Address:</label>
+        <label for="user_email">E-mail Address:</label>
         <br />
-        <input type="text" id="user_email" name="user_email" class="textinput" maxlength="75" />
+        <input type="email" id="user_email" name="user_email" class="textinput" maxlength="75" required/>
         <br />
         <label for="website_address">Website Address:</label>
         <br />
@@ -92,22 +91,21 @@
         <select size="1" id="mySelect2" name="mySelect2">
           <option value="Google">Google</option>
           <option value="Yahoo">Yahoo</option>
-		  <option value="MSN">MSN</option>
+          <option value="MSN">MSN</option>
           <option value="Advertising">Advertising</option>
           <option value="Directory">Directory</option>
           <option value="Referral">Referral</option>
-		  <option value="Other">Other</option>
+          <option value="Other">Other</option>
         </select>
         <br />
         <br />
         <label for="comments">Comments/Questions:</label>
         <br />
-        <textarea id="comments" name="comments" class="textarea"></textarea>
+        <textarea id="comments" name="comments" class="textarea" required></textarea>
         <br />
         <br />
         <input type="submit" value="Submit" class="buttonSubmit" />
         <div id="stylesheetTest"></div>
-        <input type="hidden" name="_redirect" value="https://lapolymer.com/thank-you.html">
       </form>
     </div>
     <!-- Begin column right -->
@@ -121,7 +119,7 @@
           Policy</a>. </p>
         <p>L A Polymer Consulting<br />
           Atlanta, GA, USA<br />
-          E-mail: <a href="mailto:info@lapolymer.com?subject=Inquiry from LA Polymer Consulting">
+          E-mail: <a href="mailto:info@lapolymer.com?subject=Inquiry for LA Polymer Consulting">
                       info@lapolymer.com
                   </a></p>
       </div>
